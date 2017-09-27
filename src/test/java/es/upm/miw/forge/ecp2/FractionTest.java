@@ -19,8 +19,8 @@ public class FractionTest {
 
 	@Test
 	public void testIsEquivalente() {
-		assertEquals(1, f.isEquivalente(f1));
-		assertEquals(1, f1.isEquivalente(f));
+		assertEquals(true, f.isEquivalente(f1));
+		assertEquals(true, f1.isEquivalente(f));
 	}
 
 }
