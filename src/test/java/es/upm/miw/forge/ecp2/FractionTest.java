@@ -22,5 +22,15 @@ public class FractionTest {
 		assertEquals(true, f.isEquivalente(f1));
 		assertEquals(true, f1.isEquivalente(f));
 	}
+	
+	@Test
+	public void testIsPropia() {
+		assertEquals(false, f.isPropia());
+	}
+	
+	@Test
+	public void testIsInPorpia() {
+		assertEquals(true, f.isInPropia());
+	}
 
 }
