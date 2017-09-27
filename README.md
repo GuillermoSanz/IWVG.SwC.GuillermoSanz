@@ -21,4 +21,4 @@ Mirar en la [wiki](../../wiki) del proyecto
 ## Licencia
 **Máster de Ingeniería Web** por la **Universidad Politécnica de Madrid**.
 
-*&copy;Jesús Bernal Bermúdez*.
+*&copy;Jesús Bernal Bermúdez*. 
