@@ -54,5 +54,14 @@ public class DecimalCollectionTest {
 		exception.expect(ArithmeticException.class);
 		new DecimalCollection().higher();
 	}
+	
+	@Test
+	public void testListaEntera() {
+	    decimalCollection = new DecimalCollection();
+	    decimalCollection.add(2.0);
+	    integerCollection = decimalCollection.listaEntera();
+	    assertEquals(2, integerCollection.higher(),);
+	    
+    }
 
 }

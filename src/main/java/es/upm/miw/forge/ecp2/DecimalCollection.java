@@ -44,5 +44,16 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public ArrayList<Integer> listaEntera() {
+        ArrayList<Integer> newListOfIntegers = new ArrayList<Integer>();
+        collection = this.collection;
+        
+        for(Double d : collection){
+            newListOfIntegers.add(d.intValue());
+        }
+        
+        return newListOfIntegers;
+    }
 
 }
