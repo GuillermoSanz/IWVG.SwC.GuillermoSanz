@@ -57,6 +57,7 @@ public class DecimalCollectionTest {
 	
 	@Test
 	public void testListaEntera() {
+	    ArrayList<Integer> integerCollection = new ArrayList<Integer>();
 	    decimalCollection = new DecimalCollection();
 	    decimalCollection.add(2.0);
 	    integerCollection = decimalCollection.listaEntera();
