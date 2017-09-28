@@ -1,6 +1,10 @@
 package es.upm.miw.forge.ecp2;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -9,7 +13,8 @@ import org.junit.rules.ExpectedException;
 
 public class DecimalCollectionTest {
 	private DecimalCollection decimalCollection;
-
+	private ArrayList<Integer> integerCollection;
+	
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
 
@@ -57,12 +62,9 @@ public class DecimalCollectionTest {
 	
 	@Test
 	public void testListaEntera() {
-	    ArrayList<Integer> integerCollection = new ArrayList<Integer>();
-	    decimalCollection = new DecimalCollection();
-	    decimalCollection.add(2.0);
-	    integerCollection = decimalCollection.listaEntera();
-	    assertEquals(2, integerCollection.higher());
-	    
+		this.integerCollection = this.decimalCollection.listaEntera();
+		boolean result = 2 == integerCollection.get(0);
+	    assert(result);
     }
 
 }
