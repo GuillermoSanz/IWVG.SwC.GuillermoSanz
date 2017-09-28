@@ -60,7 +60,7 @@ public class DecimalCollectionTest {
 	    decimalCollection = new DecimalCollection();
 	    decimalCollection.add(2.0);
 	    integerCollection = decimalCollection.listaEntera();
-	    assertEquals(2, integerCollection.higher(),);
+	    assertEquals(2, integerCollection.higher());
 	    
     }
 
