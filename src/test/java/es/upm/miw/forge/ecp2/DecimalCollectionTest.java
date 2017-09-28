@@ -66,5 +66,5 @@ public class DecimalCollectionTest {
 		boolean result = 2 == integerCollection.get(0);
 	    assert(result);
     }
-
+ 
 }
